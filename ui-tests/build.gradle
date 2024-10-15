@@ -11,16 +11,3 @@ dependencies {
 
 }
 
-
-allure {
-    report{
-        version.set("2.30.0")
-    }
-    adapter {
-        frameworks {
-            junit5{
-                adapterVersion.set("2.12.0")
-            }
-        }
-    }
-}
