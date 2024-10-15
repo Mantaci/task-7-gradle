@@ -11,4 +11,13 @@ public interface UIProps extends Config{
     @Key("BASE_URL")
     String baseURL();
 
+    @Key("selenoid.webDriver.url")
+    String webDriverURL();
+
+    @Key("selenoid.webDriver.browserName")
+    String webDriverBrowserName();
+
+    @Key("selenoid.webDriver.browserVersion")
+    String webDriverBrowserVersion();
+
 }
