@@ -1,0 +1,26 @@
+
+dependencies {
+    implementation project(':api-tests')
+
+    testImplementation 'com.codeborne:selenide:7.5.1'
+    testImplementation 'io.qameta.allure:allure-selenide:2.21.0'
+    implementation 'com.codeborne:selenide:7.5.1'
+    implementation 'io.qameta.allure:allure-selenide:2.21.0'
+    implementation 'org.aeonbits.owner:owner:1.0.4'
+    implementation 'org.assertj:assertj-core:3.26.0'
+
+}
+
+
+allure {
+    report{
+        version.set("2.30.0")
+    }
+    adapter {
+        frameworks {
+            junit5{
+                adapterVersion.set("2.12.0")
+            }
+        }
+    }
+}
