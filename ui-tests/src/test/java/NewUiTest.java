@@ -17,7 +17,7 @@ public class NewUiTest extends BasicUiTest {
     @MethodSource("checkboxOrderProvider")
     public void checkboxesTest(int[] checkboxOrder) {
 
-        CheckboxesPage checkboxesPage = new CheckboxesPage();
+
         CheckboxesPageAssert checkboxesPageAssert = new CheckboxesPageAssert(checkboxesPage);
 
 
@@ -46,7 +46,6 @@ public class NewUiTest extends BasicUiTest {
 
     @Test
     public void dropdownTest() {
-        DropdownPage dropdownPage = new DropdownPage();
         ElementsCollection dropdownOptions = dropdownPage.getDropdownOptions();
 
 
@@ -64,7 +63,6 @@ public class NewUiTest extends BasicUiTest {
 
     @RepeatedTest(5)
     public void disappearingElementsTest() {
-        DisappearingElementsPage disappearingElementsPage = new DisappearingElementsPage();
         int maxAttempts = 10;
 
         disappearingElementsPage.openDisappearingElementsPage();
@@ -93,7 +91,6 @@ public class NewUiTest extends BasicUiTest {
 
     public void inputsTest(String inputValue) {
 
-        InputsPage inputsPage = new InputsPage();
 
         inputsPage.openInputsPage().inputElementClick().inputElementSendKeys(inputValue);
         String actualInputValue = inputsPage.inputElementGetValue();
